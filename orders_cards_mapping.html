@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Catch Your Pokemon | Orders Cards Mapping </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style type="text/css"></style>
+</head>
+<body>
+
+<!--Navbar Citation: https://getbootstrap.com/docs/4.3/components/navbar/-->
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-color: #2c3e50;">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a href="index.html" class="navbar-brand"><i class="fa fa-home" aria-hidden="true"></i><span class="sr-only">(current)</span> Home </a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="customers.html">Customers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="orders.html">Orders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="personal_collections.html">Personal Collections</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="stock.html">Stock</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cards_pc_mapping.html">Cards Personal Collection Mapping</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="orders_cards_mapping.html">Orders Cards Mapping</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1><i class="fa fa-road" aria-hidden="true"></i> Orders_Cards_Mapping </h1>
+    <p>Associative Table to connect Cards and Orders.</p>
+  </div>
+  <!--FORM-->
+  <section>
+    <form id="form" method="post">
+      <fieldset>
+        <legend>Enter Card Info</legend>
+        <label>Order ID:
+          <input type="number" placeholder="ie 12347758" name="Order_ID" id="Order_ID">
+        </label>
+        <br>
+        <label>Card ID:
+          <input type="number" placeholder="ie 12347758" name="Card_ID" id="Card_ID">
+        </label>
+        <br>
+        <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+    </form>
+  </section>
+</div>
+  
+<div class="container">
+  <div class="jumbotron">
+    <h1>Interconnections</h1>
+
+    <table>
+      <tr>
+        <th>Order ID</th>
+        <th>Card ID</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>3</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>4</td>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>3</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script></body>
+</html>
